@@ -1,0 +1,15 @@
+<nav>
+  <div class="cart-icon-container">
+    <a routerLink="/cart">
+      <mat-icon [matBadge]="cartQuantity$ | async" matBadgeColor="warn">shopping_cart</mat-icon>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a routerLink="/actions-log" routerLinkActive="active">Actions Log</a>
+    <a routerLink="/cart" routerLinkActive="active">Cart</a>
+    <a routerLink="/products" routerLinkActive="active">Products</a>
+    <a routerLink="/about" routerLinkActive="active">Home</a>
+  </div>
+  <img src="L1.png" alt="Logo" class="nav-logo">
+</nav>
+<router-outlet> </router-outlet>

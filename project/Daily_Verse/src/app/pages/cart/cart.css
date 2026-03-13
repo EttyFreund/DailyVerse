@@ -1,0 +1,120 @@
+.cart-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    direction: rtl;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3f51b5;
+}
+
+/* מרכז את ההודעה באמצע הדף */
+.empty-wrapper {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3.5vh;
+}
+
+/* קופסה לבנה בהירה */
+.empty-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    color: #dda5b8;
+    opacity: 0.75;
+    margin-bottom: 20px;
+}
+
+.empty-text {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* כפתור גדול, טקסט קטן */
+.go-products-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background: linear-gradient(135deg, #D87093, #dda5b8);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem; /* כתב קטן יותר */
+    font-weight: 500;
+    box-shadow: 0 6px 20px rgba(221, 165, 184, 0.4);
+    transition: 0.3s;
+}
+
+.go-products-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* תמונה */
+.cart-product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.quantity-display {
+    min-width: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #e8eaf6;
+    border-radius: 8px;
+}
+
+.cart-summary h3 {
+    margin: 0;
+    color: #303f9f;
+    font-size: 1.5rem;
+}
+
+.summary-actions {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .full-width-table {
+        .mat-column-price, .mat-column-image {
+            display: none;
+        }
+    }
+
+    .cart-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .summary-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .summary-actions button {
+        width: 100%;
+    }
+}

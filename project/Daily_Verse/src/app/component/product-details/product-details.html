@@ -1,0 +1,22 @@
+<div class="dialog-content">
+  <div class="dialog-header">
+    <h2 class="product-title">{{ data.name }}</h2>
+  </div>
+  
+  <div class="dialog-body">
+    <div class="product-image-container">
+      <img [src]="data.image" class="product-image" alt="{{ data.name }}">
+    </div>
+    
+    <div class="product-info">
+      <p class="product-description">{{ data.description }}</p>
+      <p class="product-price">{{ data.price | usd }}</p>
+    </div>
+  </div>
+  
+  <div class="dialog-footer">
+    <button mat-raised-button color="primary" class="add-to-cart-btn" (click)="addToCart()">
+      Add to Cart
+    </button>
+  </div>
+</div>
