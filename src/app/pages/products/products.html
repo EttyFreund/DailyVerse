@@ -1,0 +1,22 @@
+<div class="products-container" style="margin-bottom: 3cm;">
+  <mat-card 
+    class="product-card" 
+    *ngFor="let p of products"
+    (click)="openDetails(p)"
+  >
+    <img mat-card-image [src]="p.image" alt="Product image">
+
+    <mat-card-title>{{ p.name }}</mat-card-title>
+
+    <mat-card-subtitle 
+      [style.color]="p.category | categoryColor">
+      {{ p.category }}
+    </mat-card-subtitle>
+
+    <mat-card-content>
+      <p>{{ p.description }}</p>
+      <p>{{ p.price | usd }}</p>
+    </mat-card-content>
+
+  </mat-card>
+</div>

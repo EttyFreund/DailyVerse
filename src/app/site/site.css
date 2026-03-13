@@ -1,0 +1,13 @@
+.nav-links a.active {
+  border-bottom: 2px solid #e91e63;
+  color: #e91e63;
+}
+
+.nav-links a:hover {
+  color: #e91e63;
+}
+
+.nav-links a.active:hover {
+  border-bottom: 2px solid #e91e63;
+  color: #e91e63;
+}
